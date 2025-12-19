@@ -1,5 +1,5 @@
 #!/bin/bash
-# compute_distances.sh
+
 # Calculates distance of m6A peak summits to anchor points (Fig1 C–F)
 
 set -e
