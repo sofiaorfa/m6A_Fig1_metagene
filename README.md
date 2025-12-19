@@ -5,6 +5,7 @@ The goal of Figure 1C–F is to demonstrate the positional enrichment of m⁶A a
 5′ splice sites, 3′ splice sites, start codons, stop codons.
 Two central concepts from the paper are followed:The m⁶A signal is derived from m⁶A-IP sequencing normalized to input.Metagene analysis is performed by averaging the m⁶A signal across many genomic features, aligned at a common reference point.
 
+
 STEPS FOLLOWED FOR THE PROJECT :
 
  STEP 1: In order to download the GSE83561 raw file and annotation file,the following commands were used in a bash terminal.
@@ -18,9 +19,10 @@ STEPS FOLLOWED FOR THE PROJECT :
       wget ftp://ftp.ebi.ac.uk/pub/databases/gencode/Gencode_human/release_19/gencode.v19.annotation.gtf.gz
       gunzip gencode.v19.annotation.gtf.gz
       
-  STEP 2: Created annotation BED files using the annotation.sh script 
+  STEP 2: Created annotation BED files using the annotation.sh script.
+  This script parses the GENCODE GTF file and generates BED files for 5′ splice sites, 3′ splice sites, start codons, stop codons
   
-  STEP 3: Convert all bigWigs to bedGraph 
+  STEP 3: Convert all bigWigs to bedGraph. This step happend because bedgraph provides genomic intervals and signal values useful           for peak detection.
   
     mkdir results
     cd results
