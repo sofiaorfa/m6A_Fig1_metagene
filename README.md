@@ -1,6 +1,10 @@
-AIM OF THE PROJECT:
-This repository contains scripts and figures in an attempt to reproduce Figure 1C–F from Transient N-6-Methyladenosine Transcriptome Sequencing Reveals a Regulatory Role of m6A in Splicing Efficiency (Louloupi, Annita et al.)
-Following the paper and supplementary methods, two concepts are central:m6A signal is obtained from m6A-IP sequencing normalized to input and the metagene analysis was done by plotting the average frequency of m6A peak summits per nucleotide position
+AIM OF THE PROJECT
+
+This repository contains scripts and figures aiming to reproduce Figure 1C–F from Transient N-6-Methyladenosine Transcriptome Sequencing Reveals a Regulatory Role of m6A in Splicing Efficiency (Louloupi A. et al., Cell Reports, 2018).
+The goal of Figure 1C–F is to demonstrate the positional enrichment of m⁶A along nascent transcripts, specifically around:
+5′ splice sites, 3′ splice sites, start codons, stop codons
+
+Two central concepts from the paper are followed:The m⁶A signal is derived from m⁶A-IP sequencing normalized to input.Metagene analysis is performed by averaging the m⁶A signal across many genomic features, aligned at a common reference point.
 
 STEPS FOLLOWED FOR THE PROJECT :
 
