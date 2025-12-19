@@ -28,7 +28,11 @@ STEPS FOLLOWED FOR THE PROJECT :
     done
 
  STEP 4: Find the peaks using the peaks.sh script and then calculate the peaks per feature using the peak_perfeature.sh script
- STEP 5: 
+ 
+ STEP 5: Find motifs for every peak using the motif_peaks.sh script
+
+ STEP 6:
+ 
 
 
 
