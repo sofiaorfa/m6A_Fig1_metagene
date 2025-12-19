@@ -1,7 +1,5 @@
-#!/usr/bin/env Rscript
-# ------------------------------------------------------------
-# Better recreation of Figure 1C–F
-# ------------------------------------------------------------
+!/usr/bin/env Rscript
+# Recreation of Figure 1C–F
 suppressPackageStartupMessages({
   library(data.table)
   library(ggplot2)
@@ -9,7 +7,7 @@ suppressPackageStartupMessages({
   library(zoo)
 })
 
-# helper to read last column (distance)
+# read last column (distance)
 read_dist <- function(file) {
   dt <- fread(file, header = FALSE)
   d  <- as.numeric(dt[[ncol(dt)]])
@@ -67,4 +65,4 @@ pdf("Fig1C_F_profiles_normalized.pdf", width = 12, height = 9)
 grid.arrange(p1, p2, p3, p4, ncol = 2)
 dev.off()
 
-cat("✅ Wrote Fig1C_F_profiles_normalized.pdf\n")
+cat("Fig1C_F_profiles_normalized.pdf\n")
