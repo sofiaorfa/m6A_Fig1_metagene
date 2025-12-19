@@ -28,6 +28,7 @@ STEPS FOLLOWED FOR THE PROJECT :
     done
 
  STEP 4: Find the peaks using the peaks.sh script and then calculate the peaks per feature using the peak_perfeature.sh script
+ STEP 5: 
 
 
 
