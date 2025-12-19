@@ -31,7 +31,11 @@ STEPS FOLLOWED FOR THE PROJECT :
  
  STEP 5: Find motifs for every peak using the motif_peaks.sh script
 
- STEP 6:
+ STEP 6: For metagene profiles use the metagene_profiles.sh script 
+
+ STEP 7: For the plotting make use of the R script plot_Fig1C_F_normazlized.R scipt
+ 
+ 
  
 
 
