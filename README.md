@@ -44,7 +44,8 @@ STEPS FOLLOWED FOR THE PROJECT :
  
  
  
-
+RESULT:
+The results I generated show similar m⁶A enrichment patterns to those reported in the original study. Peaks are observed at splice sites as well as at the start and stop codons, with particularly strong enrichment near the stop codon. While there are some differences in signal intensity, the overall trends match well, indicating that the main findings of Figure 1C–F were successfully reproduced.
 
 
 
