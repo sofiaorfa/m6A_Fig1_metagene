@@ -34,13 +34,13 @@ STEPS FOLLOWED FOR THE PROJECT :
 
  STEP 4: Find the peaks using the peaks.sh script and then calculate the peaks per feature using the peak_perfeature.sh script.The script peaks.sh detects regions with elevated signal intensity of enriched m⁶A-IP signal that correspond to potential m⁶A modification sites.The per-feature annotation script assigns biological meaning to the detected m⁶A peaks by determining which transcript features they overlap. Each peak is compared against annotated splice sites, exons, introns, and codons to identify where along the transcript the m⁶A signal occurs.
  
- STEP 5: Find motifs for every peak using the motif_peaks.sh script
+ STEP 5: Motif validation of m⁶A peaks using the motif_peaks.sh script which extracts sequences around peak centers and tests for enrichment of known m⁶A sequence motifs. This step serves as quality control.
 
  STEP 6: Distance-based signal extraction using the distance.sh script to measure how the m⁶A signal changes around important transcript landmarks such as splice sites and codons. For each landmark, the script extracts the m⁶A signal in a fixed region 500 nucleotides upstream and downstream and rewrites the signal using the landmark as the center point (distance = 0).This allows signals from many different genes to be aligned and averaged together.
- 
- STEP 6: For metagene profiles use the metagene_profiles.sh script 
 
- STEP 7: For the plotting make use of the R script plot_Fig1C_F_normazlized.R scipt This R scriptreads distance-resolved signal matrices computes the mean signal per nucleotide position produces line plots corresponding to Figure 1C–F
+ STEP 7: Metagene profile generation using the distance signal matrices to compute the average m⁶A signal at each position relative to the landmark.
+
+ STEP 8: For the plotting make use of the R script plot_Fig1C_F_normazlized.R scipt This R script reads distance-resolved signal matrices computes the mean signal per nucleotide position and produces line plots corresponding to Figure 1C–F
  
  
  
