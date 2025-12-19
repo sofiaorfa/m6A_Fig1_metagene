@@ -21,7 +21,7 @@ STEPS FOLLOWED FOR THE PROJECT :
       
   STEP 2: Created annotation BED files using the annotation.sh script. This script parses the GENCODE GTF file and generates BED    files for 5′ splice sites, 3′ splice sites, start codons, stop codons
   
-  STEP 3: Convert all bigWigs to bedGraph. This step happend because bedgraph provides genomic intervals and signal values useful           for peak detection.
+  STEP 3: Convert all bigWigs to bedGraph. This step is necessary because bigWig files are optimized for visualization, whereas because bedgraph provides genomic intervals and signal values useful for peak detection.
   
     mkdir results
     cd results
@@ -38,8 +38,8 @@ STEPS FOLLOWED FOR THE PROJECT :
 
  STEP 6: Distance-based signal extraction using the distance.sh script to measure how the m⁶A signal changes around important transcript landmarks such as splice sites and codons. For each landmark, the script extracts the m⁶A signal in a fixed region 500 nucleotides upstream and downstream and rewrites the signal using the landmark as the center point (distance = 0).This allows signals from many different genes to be aligned and averaged together.
 
- STEP 7: Metagene profile generation using the distance signal matrices to compute the average m⁶A signal at each position relative to the landmark.
-
+ STEP 7: Metagene profile generation by averaging the distance-resolved signal matrices across all features to compute the mean m⁶A signal at each position relative to the landmark.
+ 
  STEP 8: For the plotting make use of the R script plot_Fig1C_F_normazlized.R scipt This R script reads distance-resolved signal matrices computes the mean signal per nucleotide position and produces line plots corresponding to Figure 1C–F
  
  
